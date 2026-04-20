@@ -173,7 +173,7 @@ function MatchCard({ match, visible, showSkeleton, onClick, isBestOf3 }: { match
       >
         {isFinal && (
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-2 border border-amber-500/50 rounded text-[9px] text-amber-500 font-bold font-ui uppercase tracking-widest z-10 whitespace-nowrap shadow-[0_0_8px_rgba(245,158,11,0.3)]">
-            Torneio da Macacada
+            Mortal da Macacada
           </div>
         )}
         {isMatchBye && (
@@ -345,7 +345,7 @@ export default function App() {
               exit={{ opacity: 0, scale: 1.05 }}
               className="flex-1 flex flex-col items-center justify-center max-w-xl mx-auto w-full z-10"
             >
-              <h1 className="text-4xl md:text-5xl font-mk text-amber-500 [text-shadow:0_0_15px_rgba(245,158,11,0.5)] mb-2 uppercase text-center border-b border-amber-500/30 pb-2">Torneio da Macacada</h1>
+              <h1 className="text-4xl md:text-5xl font-mk text-amber-500 [text-shadow:0_0_15px_rgba(245,158,11,0.5)] mb-2 uppercase text-center border-b border-amber-500/30 pb-2">Mortal da Macacada</h1>
               <p className="text-white/70 mb-6 font-ui text-xl uppercase tracking-widest text-center">Inicie o Torneio</p>
               
               <div className="w-full bg-black/80 p-4 md:p-6 rounded-xl border border-red-900/50 shadow-[0_0_20px_rgba(153,27,27,0.2)]">
@@ -438,7 +438,7 @@ export default function App() {
                   ← Voltar
                 </button>
                 <div className="text-center">
-                  <h2 className="font-mk text-xl md:text-2xl text-amber-500 [text-shadow:0_0_8px_rgba(245,158,11,0.5)]">Torneio da Macacada</h2>
+                  <h2 className="font-mk text-xl md:text-2xl text-amber-500 [text-shadow:0_0_8px_rgba(245,158,11,0.5)]">Mortal da Macacada</h2>
                   <p className="text-[10px] md:text-xs text-white/50 uppercase tracking-widest">{isBestOf3 ? 'RODADA 1: MELHOR DE 3' : 'MORTE SÚBITA TOTAL'}</p>
                 </div>
                 <div className="w-[60px]"></div>
@@ -534,7 +534,7 @@ export default function App() {
                 <div className="flex justify-between items-center mb-6">
                   <div>
                     <h3 className="text-amber-500 font-mk text-xl uppercase font-black [text-shadow:0_0_8px_rgba(245,158,11,0.5)]">
-                      {activeMatch.id === 'm7' ? 'Torneio da Macacada' : activeMatch.round === 1 ? 'Quartas' : 'Semifinal'}
+                      {activeMatch.id === 'm7' ? 'Mortal da Macacada' : activeMatch.round === 1 ? 'Quartas' : 'Semifinal'}
                     </h3>
                     <p className="text-[10px] text-white/50 uppercase tracking-widest mt-1 font-ui">
                       {!isBestOf3 || activeMatch.round > 1 ? 'Modo: Morte Súbita' : 'Modo: Melhor de 3'}
